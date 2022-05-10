@@ -56,7 +56,7 @@ const Hero = ()=>{
 
                         <Flex justify={'flex-end'}>
 
-                            <ChakraButton btnVariant='large'></ChakraButton>
+                            <ChakraButton btnVariant='primary1'></ChakraButton>
 
                         </Flex>
 
