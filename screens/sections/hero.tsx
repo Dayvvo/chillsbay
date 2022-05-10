@@ -7,7 +7,7 @@ import {FiSearch} from 'react-icons/fi'
 import { Input } from "@chakra-ui/react";
 import { AiOutlineCalendar } from "react-icons/ai";
 import { RiHeartPulseLine } from "react-icons/ri";
-import ChakraButton from "components/ChakraButton";
+import ChakraButton from "../../components/ChakraButton";
 
 const Hero = ()=>{
     const styles = useStyleHooks();
