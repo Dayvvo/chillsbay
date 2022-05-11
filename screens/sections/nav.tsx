@@ -17,7 +17,7 @@ const Navbar = ()=>{
     const styles = useStylesHook();
 
     // type of fles
-
+    console.log('types of tiles')
     return(
         <Box
          py={['1.4em','1.4em']}
