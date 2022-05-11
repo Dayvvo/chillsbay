@@ -1,4 +1,4 @@
-import {  Box, Tab, TabList, TabPanel, TabPanels, Tabs, Flex, Center, SimpleGrid,Image  } from "@chakra-ui/react"
+import {  Box, Tab, TabList, TabPanel, TabPanels, Tabs, Flex, Center, SimpleGrid,Text,Image  } from "@chakra-ui/react"
 import useStyleHooks from '../../hooks/useStyles';
 import Header from '../../components/Header';
 import { InputGroup } from "@chakra-ui/react";
@@ -8,6 +8,8 @@ import { Input } from "@chakra-ui/react";
 import { AiOutlineCalendar } from "react-icons/ai";
 import { RiHeartPulseLine } from "react-icons/ri";
 import ChakraButton from "../../components/ChakraButton";
+import EventSection from "./eventsection";
+import Carousel from "../../components/Carousel";
 
 const Hero = ()=>{
     const styles = useStyleHooks();
@@ -16,8 +18,10 @@ const Hero = ()=>{
 
         <>
 
-            <Tabs position='relative'>
-                <Flex px={['1em','1.5em','3em','5em']} position='absolute' h='full' left={0} top={0}  align='center'>
+
+            <Box position={'relative'}>
+
+                <Flex zIndex={100} px={['1em','1.5em','3em','5em']} position='absolute' h='full' left={0} top={0}  align='center'>
                     <Box  bg={styles.neut300} minW={{lg:'540px'}}  borderRadius={'8px'} p='1.2em'>
 
                         <Header hVariant='h2'>  
@@ -54,45 +58,29 @@ const Hero = ()=>{
                         </Flex>
 
 
-                        <Flex justify={'flex-end'}>
+                        <Flex mt='1.5em' justify={'flex-end'}>
 
-                            <ChakraButton btnVariant='primary1'></ChakraButton>
+                            <ChakraButton btnVariant='primary1' btnSize='large'>
+                                Search
+                            </ChakraButton>
 
                         </Flex>
 
                     </Box>
                 </Flex>
-                
-                <Box position='absolute' bottom='0' left={0} display='flex' justifyContent='center'className='absoluteDiv'  width='100%'>
-                
-                    <TabList fontSize='8px'  py={'2em'}>
-                        {[1,2,3].map(int=>
-                            <Tab   fontSize='1px' color='transparent'
-                            key={int}
-                            marginX={'0.6em'}
-                            borderRadius='50%'
-                            bg={styles.neut500} 
-                            _selected={{bg:styles.neut700,transform:'scale(1.2)'}}
-                            > 
-                                a 
-                            </Tab>
-                        )
-                        }
-                    </TabList>
-                </Box>
 
-                <TabPanels padding={0}>
-                        <TabPanel padding={0}>
-                            <Box bg='url("hero.png")' h={['400px','450px','500px']}></Box>
-                        </TabPanel>
-                        <TabPanel padding={0}>
-                            <Box bg='url("hero.png")' h={['400px','450px','500px']}></Box>
-                        </TabPanel>
-                        <TabPanel padding={0}>
-                            <Box bg='url("hero.png")' h={['400px','450px','500px']}></Box>
-                        </TabPanel>
-                </TabPanels>
-            </Tabs>
+
+                <Carousel arrows={false}>
+                    {
+                        [1,2,3]
+                        .map(value=> <Box key={value} bg='url("hero.png")' h={['400px','450px','500px']}></Box>) 
+                    }
+
+                </Carousel>
+
+
+
+            </Box>
 
 
             <Box>
@@ -114,7 +102,156 @@ const Hero = ()=>{
                 </SimpleGrid>
 
             </Box>
-        
+
+            <SimpleGrid 
+             px={['1em','1.5em','3em','5em']}
+             mt='2.5em' 
+             bg={styles.sec3}
+             columns={{sm:3,lg:3}}
+             >
+                <Flex py='2em' justify={'center'}>
+
+                    <Box>
+                        <Center>
+                            <Box maxW='190px'>
+                                
+                                <Header hVariant="h4" textAlign={'center'} light fontWeight={600} color='black'> 
+                                    Your  entire  trip in one checkout!                                
+                                </Header>
+
+                                <Text my='0.8em' align='center' fontWeight={400}   fontSize='16px'>
+                                    Add multiple experiences to your cart and checkout on one click.
+                                </Text>
+                                <Center> <Image src='/assets/cart-blue.svg' /> </Center>
+
+                            </Box>
+
+                        </Center>
+
+                    </Box>
+
+                </Flex>
+                
+
+
+                <Flex py='2em' justify={'center'}>
+
+                    <Box>
+                        <Center>
+                            <Box maxW='190px'>
+                                
+                                <Header hVariant="h4" textAlign={'center'} light fontWeight={600} color='black'> 
+                                    Pay with crypto on the go                               
+                                </Header>
+
+                                <Text my='0.8em' align='center' fontWeight={400}   fontSize='16px'>
+                                    Add multiple experiences to your cart and checkout on one click.
+                                </Text>
+
+                                <Center> <Image src='/assets/wallet.svg' /> </Center>
+
+                            </Box>
+
+                        </Center>
+
+                    </Box>
+
+                </Flex>
+
+
+                <Flex py='2em' justify={'center'}>
+
+                    <Box>
+                        <Center>
+                            <Box maxW='190px'>
+                                
+                                <Header hVariant="h4" textAlign={'center'} light fontWeight={600} color='black'> 
+                                    Free Cancellation and ticket transfer                               
+                                </Header>
+
+                                <Text my='0.8em' align='center' fontWeight={400}   fontSize='16px'>
+                                    Add multiple experiences to your cart and checkout on one click.
+                                </Text>
+
+                                <Center>
+
+                                    <Image src='/assets/tickets.svg' />
+
+                                </Center>
+
+                            </Box>
+
+
+                        </Center>
+
+                    </Box>
+
+                </Flex>
+
+
+
+                
+
+
+            </SimpleGrid>
+
+
+            <Box
+             px={['1em','1.5em','3em','5em']}
+             mt='2.5em' 
+             bg={styles.sec3}
+             py='2em'
+            >
+                <Header  hVariant="h3"  >
+                    Top things to do in Lagos
+                </Header>
+
+                <SimpleGrid mt={'1.5em'} spacingX={['1.5em','2em']} spacingY='2.5em' columns={[1,1,2,3,4]} >
+                    {
+                        [1,2,3,4,5,].map((entry)=>
+                            <Box w='240px' key={entry}>
+                                <Image height={'230px'} width='full' borderRadius='17px' src={`/assets/column${entry}.png`} />
+                                <Center>
+                                    <Header light fontWeight={600} py='0.3em' fontSize={'20px'}> Lorem Ipsum  </Header>
+                                </Center>
+                            </Box>    
+                            
+                        )
+                    }
+
+                </SimpleGrid>
+            </Box>
+
+            <EventSection/>
+
+
+            <Box mt='3.5em'>
+                <Flex py='2em' px={['1em','1.5em','3em','3.5em']}>
+
+                    <Header hVariant="h4"   >
+                        See what people are experiencing with 
+                    </Header>
+
+                    <Header ml='0.2em' hVariant="h4" color={styles.pry}  >
+                        Chillsbay? 
+                    </Header>
+                    
+                </Flex>
+
+
+                <SimpleGrid px={'2em'}  columns={[1,2,3,5]} spacingY={['2em']} >
+
+                    {['eat','drink','events','club','reacreation'].map((value,index)=> 
+                        <Box key={value}>
+                            <Box minH={'250px'} bgSize={'cover'} bg={`url("/assets/column${index+1}.png")`} >
+                            </Box>       
+                        </Box>
+                    )}  
+
+                </SimpleGrid>
+
+            </Box>
+
         </>
 
     )

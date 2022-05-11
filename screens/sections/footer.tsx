@@ -1,4 +1,4 @@
-import {  Box,Button,Flex,Image, Text  } from "@chakra-ui/react"
+import {  Box,Button,Flex,Image, SimpleGrid, Text  } from "@chakra-ui/react"
 import ChakraText from "../../components/Text";
 import Link from "next/link";
 import useStyleHooks from '../../hooks/useStyles';
@@ -15,14 +15,16 @@ const Footer =()=>{
 
     return(
 
-        <Flex
+        <SimpleGrid
          className="footerbox"
          justify={'space-between'}
          py={['1.4em','2em']} pt={['2em','3.5em']} px={['1em','1.5em','3em','3.5em']}
          borderTop='1px solid' 
          borderTopColor={styles.neut300}          
-         gap={[0,'1em','1.5em','3em']}
+         spacingX={[0,'1em','1.5em','3em']}
          mt={'3em'}
+         columns={[1,2,3,4]}
+
         >
             <Box p='1em' flex={1}>
                 <Image src="logo.svg" height='65px' />
@@ -118,6 +120,26 @@ const Footer =()=>{
                         </Box>
 
 
+                        <Box mt='0.5em'>
+                            <Link href=''>
+                                <ChakraText  color={styles.neut600}>Careers</ChakraText>
+                            </Link>
+                        </Box>
+
+
+                        <Box mt='0.5em'>
+                            <Link href=''>
+                                <ChakraText  color={styles.neut600}>Contact</ChakraText>
+                            </Link>
+                        </Box>
+
+
+                        <Box mt='0.5em'>
+                            <Link href=''>
+                                <ChakraText  color={styles.neut600}>FAQs</ChakraText>
+                            </Link>
+                        </Box>
+
 
                     </Box>
 
@@ -198,7 +220,7 @@ const Footer =()=>{
                  
             </Box>
 
-        </Flex>
+        </SimpleGrid>
         
 
 
