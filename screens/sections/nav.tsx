@@ -1,5 +1,4 @@
 import {  Box, Button, Circle, Flex, Image,  } from "@chakra-ui/react"
-import ChakraButton from "../../components/ChakraButton"
 import {BsChevronDown} from 'react-icons/bs'
 import {
     Menu,

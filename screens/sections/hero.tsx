@@ -1,4 +1,4 @@
-import {  Box, Tab, TabList, TabPanel, TabPanels, Tabs, Flex, Center, SimpleGrid,Text,Image  } from "@chakra-ui/react"
+import {  Box,  Flex, Center, SimpleGrid,Text,Image  } from "@chakra-ui/react"
 import useStyleHooks from '../../hooks/useStyles';
 import Header from '../../components/Header';
 import { InputGroup } from "@chakra-ui/react";
