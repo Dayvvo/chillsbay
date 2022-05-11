@@ -16,6 +16,8 @@ const Navbar = ()=>{
 
     const styles = useStylesHook();
 
+    // type of fles
+
     return(
         <Box
          py={['1.4em','1.4em']}
