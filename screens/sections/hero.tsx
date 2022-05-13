@@ -73,7 +73,7 @@ const Hero = ()=>{
                 <Carousel arrows={false}>
                     {
                         [1,2,3]
-                        .map(value=> <Box key={value} bg='url("hero.png")' h={['400px','450px','500px']}></Box>) 
+                        .map(value=> <Box key={value} bg='url("hero.png")' h={['450px','450px','500px']}></Box>) 
                     }
 
                 </Carousel>
@@ -83,9 +83,11 @@ const Hero = ()=>{
             </Box>
 
 
-            <Box>
-                <Center py='2.5em'> 
-                    <Header hVariant="h2">  What are you in the mood for? </Header>
+            <Box display={{base:'none',lg:'block'}}>
+                <Center py='2.5em' px={{base:'1em',md:0}}> 
+                    <Header hVariant="h2" textAlign={['center','center','left']} >  
+                        What are you in the mood for? 
+                    </Header>
                 </Center>
 
 
@@ -104,10 +106,12 @@ const Hero = ()=>{
             </Box>
 
             <SimpleGrid 
-             px={['1em','1.5em','3em','5em']}
-             mt='2.5em' 
+             mx={['1em','1.5em','3em','5em']}
+             mt='4em' 
              bg={styles.sec3}
              columns={{sm:3,lg:3}}
+             borderRadius='15px'
+             
              >
                 <Flex py='2em' justify={'center'}>
 
@@ -198,7 +202,7 @@ const Hero = ()=>{
 
             <Box
              px={['1em','1.5em','3em','5em']}
-             mt='2.5em' 
+             mt='4em' 
              bg={styles.sec3}
              py='2em'
             >
@@ -209,7 +213,7 @@ const Hero = ()=>{
                 <SimpleGrid mt={'1.5em'} spacingX={['1.5em','2em']} spacingY='2.5em' columns={[1,1,2,3,4]} >
                     {
                         [1,2,3,4,5,].map((entry)=>
-                            <Box w='240px' key={entry}>
+                            <Box w={{base:'full', lg:'240px'}} key={entry}>
                                 <Image height={'230px'} width='full' borderRadius='17px' src={`/assets/column${entry}.png`} />
                                 <Center>
                                     <Header light fontWeight={600} py='0.3em' fontSize={'20px'}> Lorem Ipsum  </Header>

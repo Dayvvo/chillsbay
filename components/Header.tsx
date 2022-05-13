@@ -17,8 +17,7 @@ const Header =(props:ChakraHeaderProps)=>{
 
 
     const styles = hVariant? {
-        fontSize : hVariant==='h1'? '42px': 
-         hVariant==='h2'?'30px':  hVariant==='h3'? '24px': hVariant==='h4'?'22px':'17px',
+        fontSize : hVariant==='h1'? '42px': hVariant==='h2'?'30px': hVariant==='h3'? '24px': hVariant==='h4'?'22px':'17px',
         fontWeight: light?500:700,
         color:stylesHook.neut700
         
@@ -35,5 +34,4 @@ const Header =(props:ChakraHeaderProps)=>{
     )
 }
 
-
-export default Header
+export default Header;

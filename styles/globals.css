@@ -45,6 +45,10 @@ a {
   box-sizing: border-box;
 }
 
+input{
+  font-family: 'Red Hat Display', sans-serif !important;
+}
+
 
 .pry{
   color:var(--pry)

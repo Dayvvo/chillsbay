@@ -25,6 +25,8 @@ const useStylesHook = ()=>useColorModeValue(
             ill1:'#0945B9',
             ill2:'#8AAFEB',
             ill3:'#7694CD',
+
+            border1: '1px solid #E4E7EC'
           
 
         }
@@ -51,6 +53,7 @@ const useStylesHook = ()=>useColorModeValue(
         ill2:'#8AAFEB',
         ill3:'#7694CD',
       
+        border1: '1px solid #E4E7EC'
 
     }
 )

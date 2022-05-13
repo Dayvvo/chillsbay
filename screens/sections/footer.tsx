@@ -18,15 +18,15 @@ const Footer =()=>{
         <SimpleGrid
          className="footerbox"
          justify={'space-between'}
-         py={['1.4em','2em']} pt={['2em','3.5em']} px={['1em','1.5em','3em','3.5em']}
+         py={['1.4em','2em']} pt={['2em','2.5em']} px={['1em','1.5em','3em','3.5em']}
          borderTop='1px solid' 
          borderTopColor={styles.neut300}          
          spacingX={[0,'1em','1.5em','3em']}
-         mt={'3em'}
+         mt={'5em'}
          columns={[1,2,3,4]}
 
         >
-            <Box p='1em' flex={1}>
+            <Box p={{lg:'1em'}} flex={1}>
                 <Image src="logo.svg" height='65px' />
 
                 <ChakraText  fontSize='14px' color={styles.neut700}>
@@ -62,7 +62,7 @@ const Footer =()=>{
                 </Flex>
             </Box>
 
-            <Box flex={1}>
+            <Box mt={{base:'2em',lg:0}} flex={1}>
                 <Header pb='1em' borderBottom={'1px solid'} borderBottomColor={styles.neut300} 
                  light fontWeight={600} hVariant='h5'>
                      MENU
@@ -150,7 +150,7 @@ const Footer =()=>{
 
             </Box>
 
-            <Box minW={'220px'} >
+            <Box mt={{base:'2em',lg:0}}  minW={'220px'} >
                     <Header pb='1em'  borderBottom={'1px solid'} borderBottomColor={styles.neut300} 
                      light fontWeight={600} hVariant='h5'>
                         UTILITY PAGES
@@ -199,7 +199,7 @@ const Footer =()=>{
 
             </Box>
 
-            <Box flex={1} borderRadius={'20px'} bg={styles.sec3} p='1.1em' >
+            <Box mt={{base:'2em',lg:0}}  flex={1} borderRadius={'20px'} bg={styles.sec3} p='1.1em' >
                 <Flex>
                     <Box bg={styles.pry} borderRadius='16px' padding='0.8em'>
                         <Image src="compass.svg" height='20px' />

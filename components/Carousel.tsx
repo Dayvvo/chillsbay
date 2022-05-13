@@ -11,7 +11,7 @@ const Carousel=({children,arrows}:{children:any,arrows?:boolean})=>{
       arrows: arrows===undefined?true:false,
       slidesToShow: 1,
       slidesToScroll: 1,
-      nextArrow:<Box  ><BsChevronRight   color={'black'} className="nextArrow"  fontSize={'40px'} /></Box>,
+      nextArrow:<Box><BsChevronRight   color={'black'} className="nextArrow"  fontSize={'40px'} /></Box>,
       prevArrow: <Box left={['-30px','-40px','-50px']}> <BsChevronLeft color='black' className="prevArrow" fontSize={'40px'}/> </Box>
   };
 

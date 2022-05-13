@@ -31,12 +31,12 @@ const EventSection =()=>{
                     {
                         [1,2,3,4].map(entry=>
 
-                            <Flex className='carouselbox' display='flex !important' key={entry}>
+                            <Flex className='carouselbox' direction={{base:'column', lg:'row'}}  display='flex !important' key={entry}>
                                 <Image borderRadius={'20px'} bgSize={'contain'} bgRepeat={'no-repeat'} 
                                 src={`dummy/wiz.png`} w={['full','full','500px','600px']} h={['full','full','500px','600px']} />
 
 
-                                <Flex className='carouselText'  h={['full','full','500px','600px']}  direction={'column'}  py='2em' ml={{lg:'2.5em'}} flexGrow={{lg:1}}>
+                                <Flex className='carouselText'   h={['full','full','500px','600px']}  direction={'column'}  py='2em' ml={{lg:'2.5em'}} flexGrow={{lg:1}}>
                                     <Box>
 
                                         <Header hVariant="h2" maxW={'220px'} >
@@ -51,7 +51,7 @@ const EventSection =()=>{
 
                                     </Box>
 
-                                    <Box mt='auto' maxW={'280px'}>
+                                    <Box mt={{base:'2em', lg:'auto'}} maxW={'280px'}>
                                         <Flex justify='space-between'>
                                             <Flex align='center'> 
                                                 <AiFillCalendar fontSize={'25px'} color={style.pry} />

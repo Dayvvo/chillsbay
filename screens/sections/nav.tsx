@@ -17,7 +17,7 @@ const Navbar = ()=>{
     const styles = useStylesHook();
 
     // type of fles
-    console.log('types of tiles', 2)
+    // console.log('types of tiles', 2)
     return(
         <Box
          py={['1.4em','1.4em']}
@@ -28,7 +28,7 @@ const Navbar = ()=>{
              justify={'space-between'} align='center'     
              display={{base:'none',sm:'none',md:'none',lg:'flex'}}>
 
-                <Image src="logo.svg" height='65px' />
+                <Image src="/logo.svg" height='65px' />
                 
 
                 <Menu>
@@ -127,7 +127,7 @@ const Navbar = ()=>{
             </Flex>
 
             <Flex w='full' justify={'space-between'} align='center'   display={{base:'flex',sm:'flex', md:'none',lg:'none'}}  >
-                <Image src="logo.svg" height='65px' />
+                <Image src="/logo.svg" height='65px' />
 
                 <Flex cursor={'pointer'}>
                     <RiMenuLine fontSize={'25px'}  />

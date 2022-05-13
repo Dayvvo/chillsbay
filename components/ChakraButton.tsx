@@ -7,7 +7,7 @@ import useStylesHook from "../hooks/useStyles";
 
 interface btnProps{
     btnVariant?: 'primary1' |'primary2' | 'sec1' | 'sec2',
-    btnSize?:'small' | 'large' ,
+    btnSize?:'small' | 'large' | 'larger' ,
 }
 
 interface ChakraBtnProps extends ButtonProps,btnProps{}
@@ -35,7 +35,14 @@ const ChakraButton =(buttonProps?:ChakraBtnProps)=>{
         fontSize:'15px',
         padding:'0.3em 1em',
         
-    }:{}
+    }:btnSize==='larger'?
+    {
+        fontSize:'17px',
+        padding:'1.6em 1em',
+
+    }:{
+
+    }
 
     const variantStyles = btnVariant==='primary1'? {
         bg:stylesHook.pry,
