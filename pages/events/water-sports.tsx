@@ -10,7 +10,7 @@ const Restaurants = ()=>{
     return(
         <>
             <Navbar/>
-            <WaterSports />
+            <WaterSports i='events' />
         </>
     )
 
