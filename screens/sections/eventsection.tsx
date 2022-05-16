@@ -4,8 +4,8 @@ import Carousel from "../../components/Carousel";
 import ChakraText from "../../components/Text";
 import { AiFillCalendar, AiFillClockCircle } from "react-icons/ai";
 import useStylesHook from "../../hooks/useStyles";
-import {TiLocation} from 'react-icons/ti'
 import ChakraButton from "../../components/ChakraButton";
+import LocationIcon from "../../components/LocationIcon";
 
 
 const EventSection =()=>{
@@ -61,7 +61,7 @@ const EventSection =()=>{
                                             </Flex>
 
                                             <Flex align='center'> 
-                                                <TiLocation fontSize={'25px'} color={style.pry} />
+                                                <LocationIcon  />
                                                 <ChakraText ml='0.4em' fontSize={'16px'} fontWeight={600}> 
                                                     TBS Lagos 
                                                 </ChakraText>
