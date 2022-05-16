@@ -1,0 +1,22 @@
+
+
+Note
+
+components for header and text are imported from components folder
+
+Header has props hvariant: h1| h2 | h3 ....h6
+
+Text has props hvariant:  rich | link | neutral | primary
+
+
+
+import color styles from the useStyles hook in hooks folder
+initialize as follows :
+const styles = useStyles()
+
+
+use as follows 'styles.pry(for primary color) / styles.neut600(for neutral/600 color)'
+
+
+buttons also have props btnVariant, btnSize 
+
