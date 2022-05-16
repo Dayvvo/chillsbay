@@ -13,6 +13,7 @@ const Header =(props:ChakraHeaderProps)=>{
     
     const {hVariant,light,children,...rest} = props
     
+    
     const stylesHook = useStylesHook()
 
 
@@ -25,12 +26,9 @@ const Header =(props:ChakraHeaderProps)=>{
 
 
     return(
-
-
         <Text {...styles} {...rest}>
             {children}
         </Text>
-
     )
 }
 

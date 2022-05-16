@@ -55,13 +55,14 @@ export const Precautions = (styles:any)=>
 
 
 const DetailView = ({
-    path1,path2,title,images,logo
+    path1,path2,title,images,logo,other
 }:{
     path1:string,
     path2:string,
     images:string[],
     title:string,
-    logo:string
+    logo:string,
+    other?:any
 
 })=>{
 
@@ -88,7 +89,7 @@ const DetailView = ({
                 <Box>
                     <Flex>
                         <Circle> <Image maxH={'550px'} src={logo}/> </Circle>
-                        <Header ml='0.8em' hVariant='h1'>Nok by Alara</Header>    
+                        <Header  ml='0.8em' hVariant='h1'>Nok by Alara</Header>    
                     </Flex>
 
 
@@ -104,6 +105,7 @@ const DetailView = ({
 
                     {Precautions(styles)}
 
+                    {other}
 
 
                 </Box>

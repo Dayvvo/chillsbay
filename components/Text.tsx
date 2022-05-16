@@ -3,9 +3,9 @@ import useStylesHook from "../hooks/useStyles"
 
 
 interface headerProps{
-    hVariant?: 'rich' |'link'  | 'neutral' | 'primary' ,
+    hVariant?: 'rich' |'link'  | 'neutral' | 'primary',
     light?:boolean,
-    weight?:  700 |  600| 500 ,
+    weight?:  700 |  600| 500,
     txtSize?:'small'
 }
 

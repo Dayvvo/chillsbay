@@ -56,7 +56,7 @@ const Navbar = ()=>{
                         <MenuItem>Mark as Draft</MenuItem>
                         <MenuItem>Delete</MenuItem>
                         <MenuItem>Attend a Workshop</MenuItem>
-                    </MenuList>            
+                    </MenuList>
                 </Menu>
 
                 <Menu>
@@ -126,13 +126,25 @@ const Navbar = ()=>{
 
             </Flex>
 
-            <Flex w='full' justify={'space-between'} align='center'   display={{base:'flex',sm:'flex', md:'none',lg:'none'}}  >
-                <Image src="/logo.svg" height='65px' />
+            <Flex position='relative' w='full' justify={'space-between'} align='center'   display={{base:'flex',sm:'flex', md:'none',lg:'none'}}  >
+
+                <Flex justify='center' align='center' h='full' position={'absolute'} left={0} top={0} w='full' >
+                    <Image src="/logo.svg" height='53px' />
+                </Flex>
 
                 <Flex cursor={'pointer'}>
                     <RiMenuLine fontSize={'25px'}  />
                 </Flex>
                 
+                <Flex>
+                    <AiOutlineShoppingCart color={styles.neut700} fontSize='32px'/>
+                    <Circle bg={styles.pry} fontWeight={700} size='27px'
+                    color={styles.neut100} fontSize='14px' ml='0.6em'>
+                        5
+                    </Circle>
+                </Flex>
+
+
 
             </Flex>
 

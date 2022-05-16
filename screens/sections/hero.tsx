@@ -59,11 +59,9 @@ const Hero = ()=>{
 
 
                         <Flex mt='1.5em' justify={'flex-end'}>
-
                             <ChakraButton btnVariant='primary1' btnSize='large'>
                                 Search
                             </ChakraButton>
-
                         </Flex>
 
                     </Box>
