@@ -18,7 +18,7 @@ const Contact =()=>{
             px={['1em','1.5em','3em','3.5em']} 
             >
                 <Container maxW='1200px' mt='40px' mb='50px'>
-                    <Grid templateColumns='repeat(2, 1fr)' gap='20'>
+                    <Grid templateColumns={{sm: 'repeat(1, 1fr)', md: 'repeat(1, 1fr)', lg: 'repeat(2, 1fr)', xl: 'repeat(2, 1fr)', base:'repeat(1, 1fr)'}} gap='20'>
                         <Box mt='30px'>
                             <Header hVariant='h1' color={styles.neut700}>
                                 Contact Us
@@ -68,7 +68,7 @@ const Contact =()=>{
                 </Container>
 
                 <Container maxW='900px' mt='100px' mb='50px'>
-                    <Grid templateColumns='repeat(3, 1fr)' gap='10'>
+                    <Grid templateColumns={{sm: 'repeat(1, 1fr)', md: 'repeat(1, 1fr)', lg: 'repeat(3, 1fr)', xl: 'repeat(3, 1fr)', base:'repeat(1, 1fr)'}} gap='10'>
                         <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                             <Box w='130px' h='130px' borderRadius='50%' bg={styles.sec1}></Box>
                             <Header hVariant='h4' color={styles.neut700} mt='20px' mb='10px'>
