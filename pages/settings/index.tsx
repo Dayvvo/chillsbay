@@ -53,7 +53,10 @@ const Settings = ()=>{
                             <Saved/>
                         </TabPanel>
                         <TabPanel>
-                        <p>three!</p>
+
+                            <p>three!</p>
+                        
+                        
                         </TabPanel>
                         <TabPanel>
                             <Payment/>
