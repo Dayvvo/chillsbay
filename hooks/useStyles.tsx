@@ -3,8 +3,6 @@ import { useColorModeValue } from "@chakra-ui/react"
 
 
 const useStylesHook = ()=>useColorModeValue(
-        
-
     {
 
         pry:'#0E8BFF',

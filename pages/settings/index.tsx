@@ -12,6 +12,10 @@ import Payment from '../../screens/Settings/payment';
 const Settings = ()=>{
 
     const styles=  useStylesHook();
+
+    
+
+
     return(
         <>
 
